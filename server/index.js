@@ -7,9 +7,15 @@ const app = express();
 app.use(cors());
 
 const server = http.createServer(app);
+
+const allowedOrigins = [
+  "http://localhost:5173",
+  process.env.CLIENT_URL ? process.env.CLIENT_URL.replace(/\/$/, "") : ""
+].filter(Boolean);
+
 const io = new Server(server, {
   cors: {
-    origin: process.env.CLIENT_URL || "http://localhost:5173",
+    origin: allowedOrigins,
     methods: ["GET", "POST"]
   }
 });
@@ -412,4 +418,5 @@ function sendQuestion(roomCode) {
 const PORT = process.env.PORT || 3001;
 server.listen(PORT, () => {
   console.log(`SERVER RUNNING on port ${PORT}`);
+  console.log(`Allowed CORS origins: ${allowedOrigins.join(', ')}`);
 });
