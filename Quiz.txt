@@ -1,0 +1,299 @@
+Q: How many hearts does an octopus have?
+A: 3
+W: 1
+W: 2
+W: 4
+
+Q: What is the largest desert?
+A: Antarctica
+W: Sahara
+W: Gobi
+W: Kalahari
+
+Q: What does Volkswagen, the German car, mean in English?
+A: The people's car
+W: The fast car
+W: The strong car
+W: The family car
+
+Q: In what month is the official first day of summer in the northern Hemisphere?
+A: June
+W: May
+W: July
+W: August
+
+Q: In the Heinz slogan, how many varieties are they famous for?
+A: 57
+W: 47
+W: 67
+W: 75
+
+Q: What is the name of the 4 pointed pattern on a screwdriver?
+A: Philips head
+W: Flat head
+W: Torx
+W: Hex
+
+Q: What is the colloquial name of a New Zealander?
+A: Kiwi
+W: Aussie
+W: Roo
+W: Emu
+
+Q: Which mythological creature lends its name to a US city, Irish park and Harry Potter?
+A: Phoenix
+W: Dragon
+W: Griffin
+W: Unicorn
+
+Q: What are baby owls called?
+A: Owlets (or Nestlings)
+W: Chicks
+W: Pups
+W: Cubs
+
+Q: Which colours do most colourblind people struggle to distinguish?
+A: Red and Green
+W: Blue and Yellow
+W: Black and White
+W: Orange and Purple
+
+Q: What is Alektorophobia a fear of?
+A: Chickens
+W: Spiders
+W: Heights
+W: Darkness
+
+Q: Which country consumes the most chocolate per capita?
+A: Switzerland
+W: Belgium
+W: USA
+W: Germany
+
+Q: How fast does the earth spin?
+A: 1000mph
+W: 500mph
+W: 2000mph
+W: 100mph
+
+Q: What is the capital of Paraguay?
+A: Asuncion
+W: Lima
+W: Montevideo
+W: Santiago
+
+Q: Mauritius is the only country where the most commonly practiced religion is what?
+A: Hinduism
+W: Christianity
+W: Islam
+W: Buddhism
+
+Q: What is the chemical symbol for Gold?
+A: Au
+W: Ag
+W: Fe
+W: Cu
+
+Q: Which planet is known as the Red Planet?
+A: Mars
+W: Venus
+W: Jupiter
+W: Saturn
+
+Q: Who painted the Mona Lisa?
+A: Leonardo da Vinci
+W: Pablo Picasso
+W: Vincent van Gogh
+W: Michelangelo
+
+Q: What is the largest mammal in the world?
+A: Blue Whale
+W: African Elephant
+W: Giraffe
+W: Hippopotamus
+
+Q: How many players are there in a soccer team?
+A: 11
+W: 10
+W: 12
+W: 9
+
+Q: What is the hardest natural substance on Earth?
+A: Diamond
+W: Gold
+W: Iron
+W: Platinum
+
+Q: Which ocean is the largest?
+A: Pacific Ocean
+W: Atlantic Ocean
+W: Indian Ocean
+W: Arctic Ocean
+
+Q: Who wrote 'Romeo and Juliet'?
+A: William Shakespeare
+W: Charles Dickens
+W: Jane Austen
+W: Mark Twain
+
+Q: What is the smallest prime number?
+A: 2
+W: 1
+W: 3
+W: 0
+
+Q: Which element has the atomic number 1?
+A: Hydrogen
+W: Helium
+W: Oxygen
+W: Carbon
+
+Q: What is the capital of Japan?
+A: Tokyo
+W: Kyoto
+W: Osaka
+W: Seoul
+
+Q: How many continents are there on Earth?
+A: 7
+W: 5
+W: 6
+W: 8
+
+Q: Which planet is closest to the Sun?
+A: Mercury
+W: Venus
+W: Earth
+W: Mars
+
+Q: What is the main ingredient in guacamole?
+A: Avocado
+W: Tomato
+W: Onion
+W: Pepper
+
+Q: Who is known as the father of computers?
+A: Charles Babbage
+W: Alan Turing
+W: Bill Gates
+W: Steve Jobs
+
+Q: What is the largest organ in the human body?
+A: Skin
+W: Liver
+W: Heart
+W: Brain
+
+Q: Which country is known as the Land of the Rising Sun?
+A: Japan
+W: China
+W: South Korea
+W: Thailand
+
+Q: What is the chemical symbol for water?
+A: H2O
+W: CO2
+W: O2
+W: NaCl
+
+Q: Who discovered penicillin?
+A: Alexander Fleming
+W: Marie Curie
+W: Louis Pasteur
+W: Isaac Newton
+
+Q: What is the tallest mountain in the world?
+A: Mount Everest
+W: K2
+W: Kangchenjunga
+W: Lhotse
+
+Q: Which gas do plants absorb from the atmosphere?
+A: Carbon Dioxide
+W: Oxygen
+W: Nitrogen
+W: Hydrogen
+
+Q: What is the currency of the United Kingdom?
+A: Pound Sterling
+W: Euro
+W: Dollar
+W: Yen
+
+Q: Who was the first person to walk on the Moon?
+A: Neil Armstrong
+W: Buzz Aldrin
+W: Yuri Gagarin
+W: Michael Collins
+
+Q: What is the study of mushrooms called?
+A: Mycology
+W: Biology
+W: Botany
+W: Zoology
+
+Q: How many bones are in the adult human body?
+A: 206
+W: 205
+W: 201
+W: 210
+
+Q: Which planet has the most moons?
+A: Saturn
+W: Jupiter
+W: Uranus
+W: Neptune
+
+Q: What is the chemical symbol for Iron?
+A: Fe
+W: Ir
+W: In
+W: Au
+
+Q: Who painted the Starry Night?
+A: Vincent van Gogh
+W: Pablo Picasso
+W: Claude Monet
+W: Salvador Dali
+
+Q: What is the longest river in the world?
+A: Nile
+W: Amazon
+W: Yangtze
+W: Mississippi
+
+Q: Which country is home to the kangaroo?
+A: Australia
+W: New Zealand
+W: South Africa
+W: Brazil
+
+Q: What is the speed of light?
+A: 299,792,458 m/s
+W: 300,000,000 m/s
+W: 150,000,000 m/s
+W: 1,000,000 m/s
+
+Q: Who is the author of Harry Potter?
+A: J.K. Rowling
+W: J.R.R. Tolkien
+W: George R.R. Martin
+W: Stephen King
+
+Q: What is the capital of Canada?
+A: Ottawa
+W: Toronto
+W: Vancouver
+W: Montreal
+
+Q: Which element is needed for combustion?
+A: Oxygen
+W: Hydrogen
+W: Nitrogen
+W: Carbon
+
+Q: What is the largest bird in the world?
+A: Ostrich
+W: Emu
+W: Eagle
+W: Albatross

@@ -1,0 +1,231 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+.menu, .lobby, .game, .leaderboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.input-group {
+  display: flex;
+  gap: 10px;
+  margin: 10px;
+}
+
+input {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #646cff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #535bf2;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.question-card {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  color: #333;
+  width: 100%;
+  max-width: 600px;
+}
+
+.options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.scoreboard {
+  margin-top: 20px;
+  text-align: left;
+  width: 100%;
+  max-width: 400px;
+}
+
+.scoreboard ul {
+  list-style: none;
+  padding: 0;
+}
+
+.scoreboard li {
+  background: #eee;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 4px;
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+}
+
+.timer {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ff4444;
+}
+
+.message {
+  font-size: 18px;
+  color: #666;
+  margin: 10px 0;
+}
+
+/* Podium Styles */
+.leaderboard-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.podium {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 10px;
+  margin: 40px 0;
+  height: 300px;
+}
+
+.podium-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100px;
+}
+
+.podium-step .avatar {
+  width: 50px;
+  height: 50px;
+  background: #ddd;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+  border: 3px solid white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.podium-step .bar {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  padding-top: 10px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.podium-step.first .bar {
+  height: 180px;
+  background: linear-gradient(to bottom, #FFD700, #DAA520);
+}
+
+.podium-step.second .bar {
+  height: 130px;
+  background: linear-gradient(to bottom, #C0C0C0, #A9A9A9);
+}
+
+.podium-step.third .bar {
+  height: 90px;
+  background: linear-gradient(to bottom, #CD7F32, #8B4513);
+}
+
+.podium-step .name {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.podium-step .score {
+  font-size: 14px;
+  color: #888;
+}
+
+.crown {
+  font-size: 40px;
+  margin-bottom: -10px;
+  z-index: 1;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.results-list {
+  width: 100%;
+  max-width: 500px;
+  margin-top: 20px;
+}
+
+.results-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.result-item {
+  display: flex;
+  align-items: center;
+  background: #2a2a2a;
+  margin: 8px 0;
+  padding: 15px;
+  border-radius: 8px;
+  color: white;
+}
+
+.result-item .rank {
+  font-weight: bold;
+  width: 40px;
+  color: #888;
+}
+
+.result-item .name {
+  flex-grow: 1;
+  text-align: left;
+  font-weight: 500;
+}
+
+.result-item .score {
+  font-weight: bold;
+  color: #646cff;
+}
+
+.play-again-btn {
+  margin-top: 30px;
+  padding: 15px 40px;
+  font-size: 20px;
+}
