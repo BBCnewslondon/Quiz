@@ -9,6 +9,7 @@ function App() {
   const [gameState, setGameState] = useState('menu'); // menu, lobby, playing, finished
   const [name, setName] = useState('');
   const [roomCode, setRoomCode] = useState('');
+  const [numQuestions, setNumQuestions] = useState(5);
   const [players, setPlayers] = useState([]);
   const [currentQuestion, setCurrentQuestion] = useState(null);
   const [timeLeft, setTimeLeft] = useState(30);
@@ -77,7 +78,7 @@ function App() {
 
   const createRoom = () => {
     if (name) {
-      socket.emit('create_room', { name });
+      socket.emit('create_room', { name, numQuestions });
     } else {
       alert("Please enter your name");
     }
@@ -113,6 +114,16 @@ function App() {
               placeholder="Enter Name" 
               onChange={(e) => setName(e.target.value)} 
             />
+            <div className="settings-group">
+              <label>Questions:</label>
+              <input 
+                type="number" 
+                min="1" 
+                max="50" 
+                value={numQuestions} 
+                onChange={(e) => setNumQuestions(Number(e.target.value))} 
+              />
+            </div>
             <button onClick={createRoom}>Create Room</button>
           </div>
           <div className="input-group">

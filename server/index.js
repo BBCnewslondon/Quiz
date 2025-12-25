@@ -8,14 +8,23 @@ app.use(cors());
 
 const server = http.createServer(app);
 
-const allowedOrigins = [
-  "http://localhost:5173",
-  process.env.CLIENT_URL ? process.env.CLIENT_URL.replace(/\/$/, "") : ""
-].filter(Boolean);
-
 const io = new Server(server, {
   cors: {
-    origin: allowedOrigins,
+    origin: (origin, callback) => {
+      const allowedOrigins = [
+        "http://localhost:5173",
+        ...(process.env.CLIENT_URL ? process.env.CLIENT_URL.split(',').map(url => url.trim().replace(/\/$/, "")) : [])
+      ];
+
+      // Allow requests with no origin (like mobile apps or curl requests)
+      if (!origin) return callback(null, true);
+
+      if (allowedOrigins.includes(origin)) {
+        return callback(null, true);
+      }
+
+      return callback(new Error('Not allowed by CORS'));
+    },
     methods: ["GET", "POST"]
   }
 });
@@ -292,7 +301,8 @@ io.on('connection', (socket) => {
       questions: [], 
       scores: {},
       answeredPlayers: new Set(),
-      questionTimeout: null
+      questionTimeout: null,
+      numQuestions: data.numQuestions || 5 // Default to 5 if not provided
     });
     socket.join(roomCode);
     // Add host as player
@@ -336,7 +346,7 @@ io.on('connection', (socket) => {
         });
 
         // Shuffle the questions themselves so they are in random order
-        room.questions = room.questions.sort(() => 0.5 - Math.random());
+        room.questions = room.questions.sort(() => 0.5 - Math.random()).slice(0, room.numQuestions);
 
         io.to(roomCode).emit('game_started');
         sendQuestion(roomCode);
@@ -418,5 +428,4 @@ function sendQuestion(roomCode) {
 const PORT = process.env.PORT || 3001;
 server.listen(PORT, () => {
   console.log(`SERVER RUNNING on port ${PORT}`);
-  console.log(`Allowed CORS origins: ${allowedOrigins.join(', ')}`);
 });

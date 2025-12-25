@@ -229,3 +229,20 @@ button:disabled {
   padding: 15px 40px;
   font-size: 20px;
 }
+
+.settings-group {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.settings-group label {
+  font-size: 14px;
+  color: #666;
+}
+
+.settings-group input {
+  width: 60px;
+  padding: 8px;
+}
+
